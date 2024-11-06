@@ -40,7 +40,7 @@ async def send_calories(message, state):
 
 @dp.message_handler(commands=['start'])
 async def start(message):
-    await message.answer("Привет! Я бот, который заботится о твоём здоровье.\n"
+    await message.answer("Привет! Я Бот, который заботится о твоём здоровье.\n"
                          "Пока что я умею только считать суточную норму калорий.\n"
                          "Если хочешь, чтобы я посчитал, введи слово 'Рассчитать' или нажми на соответствующую кнопку."
                          , reply_markup=kb)
