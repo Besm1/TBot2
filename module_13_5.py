@@ -80,7 +80,7 @@ async def mifflin_san_geor(age, growth, weight, gender):
     '''
     try:
         res = (10 * float(weight) * 10 +  6.25 * float(growth)
-                +  5 * float(age)
+                -  5 * float(age)
                 + (5.1 if gender[0].lower() == 'м' else (-161 if gender[0].lower() == 'ж' else None)))
     except Exception as e:
         res = f'...Упссс! Неправильные данные привели к ошибке: "{e}". Не могу рассчитать...'
